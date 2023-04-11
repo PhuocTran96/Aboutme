@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="=UTF-8">
+    <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/836e2995d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Image/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Market Intelligence</p>
+            <h1>Hi, I'm <span>Phuoc</span><br>Tran from Vietnam</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Image/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I started to change my career path after realizing that teaching was not suitable for me. In the beginning of my job  as a Sales Administrator, I continuously learned and supplemented my knowledge of Microsoft Excel in order to  process various reports to meet the demands of customers and management. After more than 3 years working in  the retail industry, in addition to being proficient in Excel, I continued to learn how to use Power BI to process large  amounts of raw data and visualize data to serve reporting for the line manager and strategy team. To serve my  career path focused on data processing, I will further enhance my knowledge on using SQL or other data querying  tools in the near future.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>MS Excel</span><br>Clean Data/Make Report Template</li>
+                        <li><span>MS PowerBI</span><br>Visualize Data/Dashboard</li>
+                        <li><span>English</span><br>TOEIC: 860/990</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>01/2022 - 03/2023</span><br>AQUA Vietnam - Market Intelligence Specialist</li>
+                        <li><span>04/2020 - 12/2021</span><br>Spiral Co. Ltd - Sale Administrator</li>
+                        <li><span>09/2019 - 03/2020</span><br>ACACY Co. Ltd - Sale Administrator</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2018</span><br>Bachelor's Degree of Education</li>
+                        <li><span>2014</span><br>Graduated from Quoc Hoc high school for Gifted</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------service----------- -->
+<div id="Service">
+    <div class="container">
+        <h1 class="sub-title">My Service</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-regular fa-file-excel"></i>
+                <h2>Sale Administrator</h2>
+                <p>Processing and cleaning data, designing report templates based on customer requirements, other departments, and direct managers.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-paper-plane"></i>
+                <h2>IT Support</h2>
+                <p>Designing a flowchart and wirefram for the system/app and predicting potential risks that may occur during the program's implementation.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Market Intelligence</h2>
+                <p>Visualizing data from processed and cleaned raw data sources using Power BI to generate comprehensive reports, and then coordinating with relevant departments to address issues reflected in the data.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------Portfolio-------- -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Image/Sale Program45.jpg">
+                <div class="layer">
+                    <h3>Dashboard</h3>
+                    <p>Through business dashboards, companies can accurately understand and have an overview of the productivity of different departments, as well as timely capture trends on various platforms.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Image/Wireframe45.png">
+                <div class="layer">
+                    <h3>Flowchart/Wireframes</h3>
+                    <p>Understanding customers, then communicating their requirements to relevant departments. Developing ideas and designing flowcharts and wireframes to support the design and IT teams.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Image/HR Data Insights45.jpg">
+                <div class="layer">
+                    <h3>Get Insights</h3>
+                    <p>Visual representations provide users with related information to meet their daily needs, and provide multi-dimensional views of data sets for users to explore, ask questions while contemplating, and discover in-depth information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contact -->
+<div id="contact"></div>
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i> tranhoangphuoc@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> 0899967575</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/tranhoangphuoc1996/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/phuoctran1996/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="Image/Tran_Hoang_Phuoc_CV.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>   
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thanks for visiting my Website. Made with <i class="fa-solid fa-heart"></i> by Phuoctran</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabconten of tabcontents){
+            tabconten.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxdiDhOgHcp8IodcosFmWch7T4JDxWN1jWcCyEn4-6sDZbpoJL91j8U_3K_-xNbooeu/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
